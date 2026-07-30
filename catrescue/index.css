@@ -1,0 +1,102 @@
+body {
+    background-color: rgb(206, 206, 206);
+    font-family: "Montserrat", sans-serif;
+}
+header{
+    background-color:rgb(77, 96, 46);
+    padding: 8px 0;
+    color: white;
+}
+.banner_img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+nav {
+    padding: 20px;
+}
+.headernav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: right;
+    gap: 50px;
+}
+.banner{
+    position: relative;
+}
+.banner_text {
+    position: absolute;
+    top: 20%;
+    left: 8%;
+    color: white;
+    width: 500px;    
+}
+.mission {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 40px;
+    align-items: center;
+}
+.mission_img{
+    width: 450px;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    margin-left: 300px;
+}
+.mission_text{
+    width: 600px;
+    margin-right: 100px;
+}
+footer{
+    background-color:rgb(77, 96, 46);
+    color: white;
+    padding: 15px 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+.fotter_nav{
+    justify-content: center;
+    gap: 50px;
+}
+h1 {
+    font-size: 3rem;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.footernav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.logolink {
+        position: absolute;
+        top: 35px;
+        left: 40px;
+        z-index: 10;
+        text-decoration: none;
+}
+.headernav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 0.3s ease;
+   }
+   .headernav a:hover::after {
+    transform: scaleX(1);
+   }
